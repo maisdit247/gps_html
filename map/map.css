@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    
+}
+
+#page{
+    font-size: 30px;
+    width: 1366px;
+    height: 768px;
+    position: absolute;
+    background-color:#33135c;
+    color: #FFD300;
+}
+#page1{
+    transform: rotate(180deg);
+    position: absolute;
+    width: 50%;
+    height: 50%;
+}
+#page2{
+    left: 50%;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+}
+#page3{
+    transform: rotate(180deg);
+    top: 50%;
+    position: absolute;
+    width: 50%;
+    height: 50%; 
+}
+#page4{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+}
+
+
+
+
+
+
+#result{
+    background-color: #33135c;
+    position: fixed;
+    width: 200px;
+    height: 50px;
+}
+
+
+
+
+

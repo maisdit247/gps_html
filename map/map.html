@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map</title>
+    <link rel="stylesheet" href="map.css">
+   
+</head>
+<body>
+    <div id="page">
+        <div id="page1"></div>
+        <div id="page2"></div>
+        <div id="page3"></div> 
+        <div id="page4"></div> 
+        <div id="result"></div> 
+    </div>
+    
+
+        <script type="text/javascript">
+            var page1 = document.getElementById("page1")
+            var page2=document.getElementById("page2")
+            var page3=document.getElementById("page3")
+            var res=document.getElementById("result")
+            
+            page1.onmousemove=function pos1(event){
+                const x =event.offsetX/3.79;
+                const y =event.offsetY/4.26
+                var X=parseInt(x)
+                var Y=parseInt(y)
+                res.innerHTML=" N "+-Y +" O "+-X;
+            }
+            page2.onmousemove=function pos2(event){
+                const x =event.offsetX/3.79;
+                const y =event.offsetY/4.26
+                var X=parseInt(x)
+                var Y=parseInt(y)
+                res.innerHTML=" N "+Y +" E "+X;
+            }
+            page3.onmousemove=function pos3(event){
+                const x =event.offsetX/3.79;
+                const y =event.offsetY/4.26
+                var X=parseInt(x)
+                var Y=parseInt(y)
+                res.innerHTML=" S "+-Y +" O "+-X;
+            }
+            page4.onmousemove=function pos4(event){
+                const x =event.offsetX/3.79;
+                const y =event.offsetY/4.26
+                var X=parseInt(x)
+                var Y=parseInt(y)
+                res.innerHTML=" S "+Y +" E "+X;
+            }
+        </script>
+    </div>
+</body>
+</html>
